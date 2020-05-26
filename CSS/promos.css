@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+		margin: 0px;
+		background-color: #f7f7f7;
+		
+	}
+		
+.Barras{
+		background: #f7f7f7;
+		width: 1365px;
+		height: 50px;
+		border-bottom: 1px solid gray;
+		display: flex;
+		justify-content: space-between;
+	}
+
+.Barras a{
+		font-family: Ink Free;
+		color: black;
+		text-decoration: none;
+		font-size: 35px;
+		font-weight: bold;
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.Barras a:hover{
+		background: rgba(0,0,0, .2);
+}
+
+.Barras a.active{
+		background: black;
+}
+
+.logos img{
+		width: 350px;
+		height: 200px;
+		justify-content: center;
+		text-align: center;	
+		left: 40%;
+		position: relative;
+	}
+.wrap{
+	width: 1365px;
+	height: 1000px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: 	wrap;	
+	
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 427px;
+	height: 480px;
+	background: #f7f7f7;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: black;
+	font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831341885-3XE1XKAMZ14NQTK1FFVR/ke17ZwdGBToddI8pDm48kK5Bu5fDtpo3KM-NEVzl5Pp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UYhDObQArydR3oOAvdbIzjKJwHZUOMacdI7FBcsofsLz2dTLzU6gAnenhtnJylf2EA/CBW077_Custom_wedding_double+barrel_stripes_pink_handmade+flowers_roses_anenomies_3tier.jpg?format=300w);
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831354015-LE8MYE2MGUD4NM1CKJ2Y/ke17ZwdGBToddI8pDm48kJRILyMNKgEhuqMKsoYybKV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmUJhYbF90H-5_X8RF95sdnjWZ5CxpLwVyt3lPRB6j79mUBT8JQRkzZfLxktSaxu0F/cbw138_Custom_wedding_4+tier_+white_metallic+textured+circles+silver%EF%80%A2bronze%EF%80%A2gold%EF%80%A2yellow_bling+border.jpg?format=300w);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831774961-X5Z3LYRGHKWLRI6J02B1/ke17ZwdGBToddI8pDm48kHXvdLf6KK1kq9eb03_dmFp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUiK78rkQdeVHAWJfLShaUTMhQBclkk9j2iaCE1sC8-L4GUIjsxV_hj2dv3qe2b3KQ/CBW155_3tier_navy_gold_birthday_stars_dots_pearls.jpg?format=300w);
+	background-size: cover;
+}
+
+.card4{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831730116-YR3JVG8FRX415GW5PNCW/ke17ZwdGBToddI8pDm48kGKne2Yayi66H886EhUoM417gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcpAtTjUli5_2cjzg03_sCNLwKt0OfZsen0Q-siAPctF_CIL1ZYFuTARAFyC6T_zvA/CBW045_custom_shower_buttercream_naked_flowers_succulents_rose-cc3.jpg?format=300w);
+	background-size: cover;
+}
+
+.card5{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831731460-YRXU0EYGBPRC6UZ1BWWI/ke17ZwdGBToddI8pDm48kCTnTiixsgifNEtZ_EB_Dot7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXtWwiDkGnwMV23TKTknnOttaJWzDjhFon48oUucVO0MgvfXeFkqR2XURoQScuJivA/CBW047_Custom_birthday_naked_single+tier_gold+drip_peony-cc2.jpg?format=300w);
+	background-size: cover;
+}
+
+.card6{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831750499-C8AIK9HY9TPJ66JEY0OP/ke17ZwdGBToddI8pDm48kIfwK886KUex63-Mq99Cxo57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UePOfMiIDP8-tjKadeCvQOyI8Ad8WA6lxErkTRc459BNdHAUU1yCyl3bk2OZwfORiw/CBW065_custom_2tier_blue_birthday_gold_flowers_quilting.jpg?format=300w);
+	background-size: cover;
+}
+
+.atras p{
+	font-family: ink free;
+	font-size: 20px;
+	
+}

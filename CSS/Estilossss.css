@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+		margin: 0px;
+		background-color: #f7f7f7;
+		
+	}
+		
+.Barras{
+		background: #f7f7f7;
+		width: 1365px;
+		height: 50px;
+		border-bottom: 1px solid gray;
+		display: flex;
+		justify-content: space-between;
+	}
+
+.Barras a{
+		font-family: Ink Free;
+		color: black;
+		text-decoration: none;
+		font-size: 35px;
+		font-weight: bold;
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.Barras a:hover{
+		background: rgba(0,0,0, .2);
+}
+
+.Barras a.active{
+		background: black;
+}
+
+.logos img{
+		width: 350px;
+		height: 200px;
+		justify-content: center;
+		text-align: center;	
+		left: 40%;
+		position: relative;
+	}
+
+.info{
+		background-image: url(https://sevilla.abc.es/gurme/wp-content/uploads/sites/24/2013/12/tiramisu.jpg);
+		background-position: center;
+		background-size: cover;
+		height: 600px;
+		width: 1365px;
+		position: relative;
+	}
+
+.contencion{
+		width: 500px;
+		height: 500px;
+		margin-left: 450px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		background: #f7f7f7;
+		border-radius: 50% ;
+		position: absolute;
+		top: 9%;
+		text-decoration: none;
+		font-family: Ink Free;
+		color: black;
+		font-size: 25px;
+		font-weight: bold;
+		opacity: 0.3;
+		z-index: 1;
+		transition: 0.3s all;
+
+
+}
+
+.contencion h2{
+	margin-top: 25%;
+	font-size: 70px;
+}
+
+.contencion h1{
+	font-size: 35px;
+}
+
+.contencion p{
+	font-size: 35px;
+}
+
+.contencion h3{
+	font-size: 35px;
+}
+
+.contencion:hover{
+	transform: scale(1.1);
+	opacity: 0.9;
+}
+
+

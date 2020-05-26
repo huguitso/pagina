@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+		margin: 0px;
+		background-color: #f7f7f7;
+		
+	}
+		
+.Barras{
+		background: #f7f7f7;
+		width: 1365px;
+		height: 50px;
+		border-bottom: 1px solid gray;
+		display: flex;
+		justify-content: space-between;
+	}
+
+.Barras a{
+		font-family: Ink Free;
+		color: black;
+		text-decoration: none;
+		font-size: 35px;
+		font-weight: bold;
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.Barras a:hover{
+		background: rgba(0,0,0, .2);
+}
+
+.Barras a.active{
+		background: black;
+}
+
+.logos img{
+		width: 350px;
+		height: 200px;
+		justify-content: center;
+		text-align: center;	
+		left: 40%;
+		position: relative;
+	}
+.wrap{
+	width: 1365px;
+	height: 1000px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: 	wrap;	
+	
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 427px;
+	height: 480px;
+	background: #f7f7f7;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: black;
+	font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831319628-HDMXTH97E6FBX7VX34DI/ke17ZwdGBToddI8pDm48kLdBBENItMlD9PGJ8PkDdql7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWAOC_dy9YppuuK6QWSoBDorH88mWpLY1dpo1NUkl74RAwSpeCy34LUnExKCYwWolw/CBW019_Custom_Cherry+Blossom_Flower_4+tier_wedding_HCO1.jpg?format=300w);
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831322200-M1C0L9YCPJXEYBS1LAKH/ke17ZwdGBToddI8pDm48kFiLoFjewiqOsbvuPtmBJqt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UT4msvuJ70zu4_zChuDFRlqtUOM2SCD6S7DSwJmrBaMR913f2s6RKsaMdUx21EzKig/CBW036_Custom_Wedding_White_Cascade_Roses_4tier_stock_MK_version+of+HC16.jpg?format=300w);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831335531-R83D1EEN2W1UWW1OA3AZ/ke17ZwdGBToddI8pDm48kP9040QQr3k54ZCsJfNtOeN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQ7a2mSXQgnmmkk4GxZxleU37xB0cEGHs-TR8DLFb4yCGAJKG50QNK5JN_CGaBRFDw/CBW064_Custom_3tier_lace_wedding_white_peach_applique_square_round.jpg?format=300w);
+	background-size: cover;
+}
+
+.card4{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831344373-RZRUFQQU92SQSWC98KIK/ke17ZwdGBToddI8pDm48kKITPCIrknkDpAf9IxFFpA97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UZPhsefwo0wzIb3Mn7A6Y9Nf3ZW6dVtH6rFEE6koGqQOPbgGo70Di_mcebCcFu9X9w/CBW082_Custom_wedding__3tier_wood_chalkboard_gold_drip_flowers_mason+jar_tree.jpg?format=300w);
+	background-size: cover;
+}
+
+.card5{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831348356-QYDP8RGH9RJM1DBMEVQI/ke17ZwdGBToddI8pDm48kJpTYsRSc7vie63ERuVtoQx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWnK1WReevsU0EOfqyp0baZSg1SZLVro-OOC5XUqxrNbFFhbnYdC-1zR-VdvdXYm2A/CBW117_3tier_custom_naked_fresh+fruit_strawberry_blueberry_blackberry_raspberry_drip_3flavors.jpg?format=300w);
+	background-size: cover;
+}
+
+.card6{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831350542-4VN6ZTW6OBCC5SNP9NL3/ke17ZwdGBToddI8pDm48kAIAG6JkmI2s440mHDdj9hV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1US7qFJncJ7a1mggFQWso4Ccm8mZKcf2TwJnnZ1TUO7yiFEBEfll09vABx7XzQ0cnlg/CBW128_Custom_Hoboken+Display_5tier_Drape_Sparkles_Wedding_White_dahlia_single+bling.jpg?format=300w);
+	background-size: cover;
+}
+
+.atras p{
+	font-family: ink free;
+	font-size: 20px;
+	
+}

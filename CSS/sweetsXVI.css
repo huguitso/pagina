@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+		margin: 0px;
+		background-color: #f7f7f7;
+		
+	}
+		
+.Barras{
+		background: #f7f7f7;
+		width: 1365px;
+		height: 50px;
+		border-bottom: 1px solid gray;
+		display: flex;
+		justify-content: space-between;
+	}
+
+.Barras a{
+		font-family: Ink Free;
+		color: black;
+		text-decoration: none;
+		font-size: 35px;
+		font-weight: bold;
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.Barras a:hover{
+		background: rgba(0,0,0, .2);
+}
+
+.Barras a.active{
+		background: black;
+}
+
+.logos img{
+		width: 350px;
+		height: 200px;
+		justify-content: center;
+		text-align: center;	
+		left: 40%;
+		position: relative;
+	}
+.wrap{
+	width: 1365px;
+	height: 1000px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: 	wrap;	
+	
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 427px;
+	height: 480px;
+	background: #f7f7f7;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: black;
+	font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831756608-DK37RC0LVATGIDN06797/ke17ZwdGBToddI8pDm48kCIcTHcTPoN8uqysYBVdJPF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmFF4sHvmgi8rFwPHCWctdpqjjiEbFXy00fJdROfuXAkdPHe8wgN2ZjmhiruXyAUyk/CBW095_Custom_birthday_3tier_quilted_leopard_bow_standing_bling_glitter_pink_white_black_2d.jpg?format=300w);
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831757125-95D532EHA5AMEAKXC00I/ke17ZwdGBToddI8pDm48kF8jUokGsMroASxlU8I-aSd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Uf-wrpNuQrTuNvvTWKgQ-QNtyf_iQGnLLXYv4pH8tFhbeWxRHzm0xMjpe8EpHYJrIw/CBW096_Custom_birthday_3tier_Pink_Sweet+16_dogwood_vines.jpg?format=300w);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831768624-N2B4CC5OW2ELZ58SKHYL/ke17ZwdGBToddI8pDm48kGjMSawnw6s-26cnlK_dvXB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luj0xCD0oh5KMc0gpox0u-ewX2p4G89R27GiiWBzpWglYMg9qpjRY6K14gEdMwxVQ/CBW124_Custom_3Tier_Blue_Silver_16_Birthday_Drip_Pencil.jpg?format=500w);
+	background-size: cover;
+}
+
+.card4{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831348034-BRGKOPE0K3WVS1841OYN/ke17ZwdGBToddI8pDm48kCorn5TtWjN3OllnWGlQd-x7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcMvrKrcnZzzHyx0QmY9TdvSQ8eX-c-L5_iN2b6AVyQMhdyjf10zfCEVHp52s13p8g/CBW116_custom_2tier_drip_red+velvet.jpg?format=300w);
+	background-size: cover;
+}
+
+.card5{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831303818-GJV85GR50DZ6P1BRE7G0/ke17ZwdGBToddI8pDm48kBkk4yFuE3CucBOgUvkFyId7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1URpq1ro7JFP58sUp2kQWIPlz2P1y-fgoS_gOdw78BYa-PeB_7ZMTLemeMlieukiyyA/CBW008_Custom+Display+_+Hoboken+Black_Pink+flowers_hand+painted_gold+leaves_Wedding_stock_4tier.jpg?format=300w);
+	background-size: cover;
+}
+
+.card6{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831350542-4VN6ZTW6OBCC5SNP9NL3/ke17ZwdGBToddI8pDm48kAIAG6JkmI2s440mHDdj9hV7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1US7qFJncJ7a1mggFQWso4Ccm8mZKcf2TwJnnZ1TUO7yiFEBEfll09vABx7XzQ0cnlg/CBW128_Custom_Hoboken+Display_5tier_Drape_Sparkles_Wedding_White_dahlia_single+bling.jpg?format=300w);
+	background-size: cover;
+}
+
+.atras p{
+	font-family: ink free;
+	font-size: 20px;
+	
+}

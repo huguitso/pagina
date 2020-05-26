@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+		margin: 0px;
+		background-color: #f7f7f7;
+		
+	}
+		
+.Barras{
+		background: #f7f7f7;
+		width: 1365px;
+		height: 50px;
+		border-bottom: 1px solid gray;
+		display: flex;
+		justify-content: space-between;
+	}
+
+.Barras a{
+		font-family: Ink Free;
+		color: black;
+		text-decoration: none;
+		font-size: 35px;
+		font-weight: bold;
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.Barras a:hover{
+		background: rgba(0,0,0, .2);
+}
+
+.Barras a.active{
+		background: black;
+}
+
+.logos img{
+		width: 350px;
+		height: 200px;
+		justify-content: center;
+		text-align: center;	
+		left: 40%;
+		position: relative;
+	}
+.wrap{
+	width: 1365px;
+	height: 1000px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: 	wrap;	
+	
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 427px;
+	height: 480px;
+	background: #f7f7f7;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: black;
+	font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831330956-NI7LUAHSZ9HP7K5JCBL7/ke17ZwdGBToddI8pDm48kCYyynILHI-ffAxBve-cKht7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXXwQo52N1ucoSCbqeEjqHUjr8bbBPUXTqpr-I_TsJ6VGLDe_BHBL9JV7OZzPTrWmA/CBW057_Custom_wedding_marble_grey_peony_4tier.jpg?format=300w);
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831349760-IQBN3YI2I1KJO4803BE8/ke17ZwdGBToddI8pDm48kERifb9dd7kav9XKNl0wMwB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmru5j-AQBePNiDV9hZLaF5AYJdabVImjTRR3DBF80GlwxjyAjRrtLy_42uyW51ZTA/CBW121_Custom_wedding_henna_drape_quilted_bling_Gold_Pink_Trim_5+Tiers.jpg?format=300w);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831767395-JYYXD16Y20K8HWSR2ETB/ke17ZwdGBToddI8pDm48kIMccHogTIG2ki7rjCG8LYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXB8IHy7y1Gi-1j4TBMuHkstYfBXWSfT__1RCJfh8-Aa5udReAk3SAnNrQAcv_Hqqw/CBW123_Custom_Teal_Turquoise_Ombre_Eiffel+Tower_France_Paris.jpg?format=300w);
+	background-size: cover;
+}
+
+.card4{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582832100979-B3ILGX5B8FQ8FLOXPIS0/ke17ZwdGBToddI8pDm48kLc4IezFfByiD5yZhteRdWlZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyDGgIIk3u2arFAIVUDQ8SHLmEb2nO8HtaseSpCney5RyZRS1_XOel3sRMqPLKEv1M/CBW054_Custom_congratulations_2+tier_stencil_damask_bling_stock+flowers.jpg?format=300w);
+	background-size: cover;
+}
+
+.card5{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582832104199-8FA9NPL93Z8MJLDGFYF5/ke17ZwdGBToddI8pDm48kAdCx4cqCGdAMwSh7pGLbHN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UTGZ23ElzhpBcKg779cOvR9VJW47SWm_hUWa0h6dyiYvhe7YIBkR7oWuXFY-eIdLGg/CBW099_Custom_3tier_wedding_brown_gold_drip_magnolia_plaque_mold.jpg?format=300w);
+	background-size: cover;
+}
+
+.card6{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5c111cc8f8370aa4e72e1994/1582831345796-SGBG0DP0XFXPBDU3EHUP/ke17ZwdGBToddI8pDm48kIvrkHJHY2e3vbaOsixqfdZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcGuZEAbwUhhaLXdyzMt6uAeX1Y9EMbOI-9ps5bc8mvk2kfMilVrK_FTO8ZNS2hwFQ/CBW091_Custom_3tier_black_white_yellow_stripes_dots_flower_wedding.jpg?format=300w);
+	background-size: cover;
+}
+
+.atras p{
+	font-family: ink free;
+	font-size: 20px;
+	
+}
